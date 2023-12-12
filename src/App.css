@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html {
+    /* width: 100%; */
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+  cursor: pointer;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    border: 5px solid #ccc;
+    border-top: 5px solid #000;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    animation: loading .5s linear infinite;
 }

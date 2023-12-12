@@ -1,0 +1,128 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: url('../../images/login.png') center/cover no-repeat; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    color: #000;
+    font-family: Nunito;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formUser{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: center;
+}
+.form_text{
+    color: var(--Grey, #C0C0C0);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.formInput{
+    display: flex;
+    width: 335px;   
+    align-items: center;  
+    border: none;
+}
+
+.name{
+    border-bottom: 0.5px solid var(--Grey, #C0C0C0);
+    padding: 10px 0px;
+    gap: 10px;
+    width: 359px;
+    margin-bottom: 47px;
+}
+
+.passwordInput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid var(--Grey, #C0C0C0);
+    padding: 4px 0;
+    margin-bottom: 16px;
+    
+}
+
+
+.forgot{
+    color: var(--Maine-blue, #5458EA);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16.8px; /* 16.8px */
+    margin-bottom: 49px;
+}
+.login_btn{
+    display: flex;
+    width: 335px;
+    height: 44px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 80px;
+    background: var(--Grey, #C0C0C0);
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 183px;
+}
+.register_btn{
+    display: flex;
+    width: 335px;
+    height: 44px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: var(--Maine-blue, #5458EA);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16.8px; /* 16.8px */
+}
+.active{
+    color: var(--Grey, #C0C0C0);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px; /* 16.8px */
+}
+.non_active{
+    display: none;
+}
